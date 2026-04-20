@@ -1,0 +1,50 @@
+:root {
+  /* Background shades */
+  --bg-primary: #0a0a0f; /* deepest dark - main background */
+  --bg-secondary: #12121a; /* slightly lighter - cards, sections */
+  --bg-tertiary: #1a1a2e; /* elevated surfaces */
+
+  /* Gradient accent colors */
+  --accent-purple: #7b2ff7; /* primary purple */
+  --accent-blue: #2196f3; /* primary blue */
+  --accent-gradient: linear-gradient(135deg, #7b2ff7, #2196f3);
+
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b5; /* muted text */
+  --text-accent: #c4a1ff; /* light purple for highlights */
+
+  /* Glow effects */
+  --glow-purple: rgba(123, 47, 247, 0.4);
+  --glow-blue: rgba(33, 150, 243, 0.3);
+
+  --font-brand: "Syne", sans-serif;
+  --font-heading: "Asimovian", sans-serif;
+  --font-body: "Funnel Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+#root {
+  display: grid;
+  grid-template-columns:
+    min-content repeat(10, minmax(min-content, 1fr))
+    min-content;
+  width: 98%;
+  margin: 0 auto;
+}
